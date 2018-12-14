@@ -54,7 +54,7 @@ class PokemonPage extends React.Component {
       <div>
         <h1>Pokemon Searcher</h1>
         <br />
-        <Search onSearchChange={_.debounce((e, input) => this.handleSearch(input))} showNoResults={false} />
+        <Search onSearchChange={_.debounce((e, input) => this.handleSearch(input), 500)} showNoResults={false} />
         <br />
         <PokemonCollection pokemon={searchMon}/>
         <br />
